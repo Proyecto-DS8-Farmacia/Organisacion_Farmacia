@@ -26,7 +26,8 @@ Public Class Login
 
 
                     MessageBox.Show("ERES UN DOCTOR", "Aviso!!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-
+                    Panel.Show()
+                    Me.Hide()
 
 
                 Else
