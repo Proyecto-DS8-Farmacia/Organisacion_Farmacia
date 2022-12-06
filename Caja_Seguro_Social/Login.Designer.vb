@@ -26,6 +26,7 @@ Partial Class Login
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
+        Me.btnIngresar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label5
@@ -71,11 +72,30 @@ Partial Class Login
         Me.txtCorreo.Size = New System.Drawing.Size(258, 31)
         Me.txtCorreo.TabIndex = 7
         '
+        'btnIngresar
+        '
+        Me.btnIngresar.BackColor = System.Drawing.Color.Black
+        Me.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnIngresar.FlatAppearance.BorderSize = 2
+        Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray
+        Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnIngresar.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnIngresar.ForeColor = System.Drawing.Color.White
+        Me.btnIngresar.Location = New System.Drawing.Point(71, 284)
+        Me.btnIngresar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnIngresar.Name = "btnIngresar"
+        Me.btnIngresar.Size = New System.Drawing.Size(191, 47)
+        Me.btnIngresar.TabIndex = 11
+        Me.btnIngresar.Text = "INGRESAR"
+        Me.btnIngresar.UseVisualStyleBackColor = False
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(340, 311)
+        Me.ClientSize = New System.Drawing.Size(340, 380)
+        Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txtContraseña)
@@ -91,4 +111,5 @@ Partial Class Login
     Friend WithEvents Label4 As Label
     Friend WithEvents txtContraseña As TextBox
     Friend WithEvents txtCorreo As TextBox
+    Friend WithEvents btnIngresar As Button
 End Class
