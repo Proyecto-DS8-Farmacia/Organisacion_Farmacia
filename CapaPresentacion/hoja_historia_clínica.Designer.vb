@@ -25,17 +25,16 @@ Partial Class hoja_historia_clínica
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtPrevision = New System.Windows.Forms.TextBox()
+        Me.txtEstado = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtNhijos = New System.Windows.Forms.TextBox()
+        Me.txtEdad = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtPerfilapellido = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtPerfilNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
@@ -51,6 +50,7 @@ Partial Class hoja_historia_clínica
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtPerfilNombre = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -81,12 +81,12 @@ Partial Class hoja_historia_clínica
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
+        Me.GroupBox2.Controls.Add(Me.txtPrevision)
+        Me.GroupBox2.Controls.Add(Me.txtEstado)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.txtNhijos)
+        Me.GroupBox2.Controls.Add(Me.txtEdad)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.txtPerfilapellido)
@@ -105,21 +105,21 @@ Partial Class hoja_historia_clínica
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
         '
-        'TextBox3
+        'txtPrevision
         '
-        Me.TextBox3.Location = New System.Drawing.Point(121, 523)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(225, 27)
-        Me.TextBox3.TabIndex = 31
+        Me.txtPrevision.Location = New System.Drawing.Point(121, 523)
+        Me.txtPrevision.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtPrevision.Name = "txtPrevision"
+        Me.txtPrevision.Size = New System.Drawing.Size(225, 27)
+        Me.txtPrevision.TabIndex = 31
         '
-        'TextBox4
+        'txtEstado
         '
-        Me.TextBox4.Location = New System.Drawing.Point(121, 477)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(225, 27)
-        Me.TextBox4.TabIndex = 30
+        Me.txtEstado.Location = New System.Drawing.Point(121, 477)
+        Me.txtEstado.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtEstado.Name = "txtEstado"
+        Me.txtEstado.Size = New System.Drawing.Size(225, 27)
+        Me.txtEstado.TabIndex = 30
         '
         'Label7
         '
@@ -141,21 +141,21 @@ Partial Class hoja_historia_clínica
         Me.Label8.TabIndex = 29
         Me.Label8.Text = "Prevision: "
         '
-        'TextBox1
+        'txtNhijos
         '
-        Me.TextBox1.Location = New System.Drawing.Point(121, 431)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(225, 27)
-        Me.TextBox1.TabIndex = 27
+        Me.txtNhijos.Location = New System.Drawing.Point(121, 431)
+        Me.txtNhijos.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtNhijos.Name = "txtNhijos"
+        Me.txtNhijos.Size = New System.Drawing.Size(225, 27)
+        Me.txtNhijos.TabIndex = 27
         '
-        'TextBox2
+        'txtEdad
         '
-        Me.TextBox2.Location = New System.Drawing.Point(121, 385)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(225, 27)
-        Me.TextBox2.TabIndex = 26
+        Me.txtEdad.Location = New System.Drawing.Point(121, 385)
+        Me.txtEdad.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtEdad.Name = "txtEdad"
+        Me.txtEdad.Size = New System.Drawing.Size(225, 27)
+        Me.txtEdad.TabIndex = 26
         '
         'Label3
         '
@@ -194,14 +194,6 @@ Partial Class hoja_historia_clínica
         Me.Label2.Size = New System.Drawing.Size(94, 25)
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Apellido: "
-        '
-        'txtPerfilNombre
-        '
-        Me.txtPerfilNombre.Location = New System.Drawing.Point(121, 199)
-        Me.txtPerfilNombre.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.txtPerfilNombre.Name = "txtPerfilNombre"
-        Me.txtPerfilNombre.Size = New System.Drawing.Size(225, 27)
-        Me.txtPerfilNombre.TabIndex = 21
         '
         'Label1
         '
@@ -355,11 +347,19 @@ Partial Class hoja_historia_clínica
         Me.Label10.TabIndex = 22
         Me.Label10.Text = "Peso "
         '
+        'txtPerfilNombre
+        '
+        Me.txtPerfilNombre.Location = New System.Drawing.Point(121, 199)
+        Me.txtPerfilNombre.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtPerfilNombre.Name = "txtPerfilNombre"
+        Me.txtPerfilNombre.Size = New System.Drawing.Size(225, 27)
+        Me.txtPerfilNombre.TabIndex = 21
+        '
         'hoja_historia_clínica
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1089, 590)
+        Me.ClientSize = New System.Drawing.Size(1089, 648)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
@@ -383,7 +383,6 @@ Partial Class hoja_historia_clínica
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents txtPerfilapellido As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtPerfilNombre As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtTelefono As TextBox
     Friend WithEvents txtCorreo As TextBox
@@ -391,12 +390,12 @@ Partial Class hoja_historia_clínica
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtPrevision As TextBox
+    Friend WithEvents txtEstado As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtNhijos As TextBox
+    Friend WithEvents txtEdad As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
@@ -406,4 +405,5 @@ Partial Class hoja_historia_clínica
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
+    Friend WithEvents txtPerfilNombre As TextBox
 End Class

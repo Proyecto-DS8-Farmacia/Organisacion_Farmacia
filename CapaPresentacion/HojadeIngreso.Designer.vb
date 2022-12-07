@@ -49,8 +49,10 @@ Partial Class HojadeIngreso
         Me.txtObservaciones = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         cbxTipoSangre = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'cbxTipoSangre
@@ -85,7 +87,7 @@ Partial Class HojadeIngreso
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(800, 305)
+        Me.GroupBox1.Size = New System.Drawing.Size(781, 316)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos Generales"
@@ -242,16 +244,16 @@ Partial Class HojadeIngreso
         '
         Me.Label8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(109, 421)
+        Me.Label8.Location = New System.Drawing.Point(37, 27)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(139, 25)
+        Me.Label8.Size = New System.Drawing.Size(140, 25)
         Me.Label8.TabIndex = 28
         Me.Label8.Text = "¿Tiene hijos?"
         '
         'rbtnSi
         '
         Me.rbtnSi.AutoSize = True
-        Me.rbtnSi.Location = New System.Drawing.Point(321, 421)
+        Me.rbtnSi.Location = New System.Drawing.Point(249, 27)
         Me.rbtnSi.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rbtnSi.Name = "rbtnSi"
         Me.rbtnSi.Size = New System.Drawing.Size(42, 24)
@@ -263,7 +265,7 @@ Partial Class HojadeIngreso
         '
         Me.rbtnNo.AutoSize = True
         Me.rbtnNo.Checked = True
-        Me.rbtnNo.Location = New System.Drawing.Point(255, 421)
+        Me.rbtnNo.Location = New System.Drawing.Point(183, 27)
         Me.rbtnNo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.rbtnNo.Name = "rbtnNo"
         Me.rbtnNo.Size = New System.Drawing.Size(50, 24)
@@ -277,7 +279,7 @@ Partial Class HojadeIngreso
         Me.lblNumHijos.Enabled = False
         Me.lblNumHijos.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.lblNumHijos.ForeColor = System.Drawing.Color.Black
-        Me.lblNumHijos.Location = New System.Drawing.Point(109, 480)
+        Me.lblNumHijos.Location = New System.Drawing.Point(37, 86)
         Me.lblNumHijos.Name = "lblNumHijos"
         Me.lblNumHijos.Size = New System.Drawing.Size(139, 25)
         Me.lblNumHijos.TabIndex = 33
@@ -286,7 +288,7 @@ Partial Class HojadeIngreso
         'txtNumHijos
         '
         Me.txtNumHijos.Enabled = False
-        Me.txtNumHijos.Location = New System.Drawing.Point(255, 477)
+        Me.txtNumHijos.Location = New System.Drawing.Point(183, 83)
         Me.txtNumHijos.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtNumHijos.Name = "txtNumHijos"
         Me.txtNumHijos.Size = New System.Drawing.Size(79, 27)
@@ -297,7 +299,7 @@ Partial Class HojadeIngreso
         '
         Me.Label11.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(550, 403)
+        Me.Label11.Location = New System.Drawing.Point(478, 22)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(167, 25)
         Me.Label11.TabIndex = 37
@@ -305,7 +307,7 @@ Partial Class HojadeIngreso
         '
         'txtObservaciones
         '
-        Me.txtObservaciones.Location = New System.Drawing.Point(494, 432)
+        Me.txtObservaciones.Location = New System.Drawing.Point(416, 51)
         Me.txtObservaciones.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.txtObservaciones.Multiline = True
         Me.txtObservaciones.Name = "txtObservaciones"
@@ -332,28 +334,39 @@ Partial Class HojadeIngreso
         Me.Button2.Text = "Siguiente"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.rbtnSi)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.rbtnNo)
+        Me.GroupBox2.Controls.Add(Me.txtObservaciones)
+        Me.GroupBox2.Controls.Add(Me.lblNumHijos)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.txtNumHijos)
+        Me.GroupBox2.Location = New System.Drawing.Point(59, 380)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(781, 192)
+        Me.GroupBox2.TabIndex = 41
+        Me.GroupBox2.TabStop = False
+        '
         'HojadeIngreso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(914, 655)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.txtObservaciones)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.txtNumHijos)
-        Me.Controls.Add(Me.lblNumHijos)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.rbtnNo)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.rbtnSi)
-        Me.Controls.Add(Me.Label8)
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "HojadeIngreso"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hoja de Ingreso"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -386,4 +399,5 @@ Partial Class HojadeIngreso
     Friend WithEvents txtObservaciones As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents GroupBox2 As GroupBox
 End Class

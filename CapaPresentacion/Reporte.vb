@@ -7,7 +7,7 @@ Public Class Reporte
         Dim conex As New SqlConnection("Data Source=DESKTOP-TO7JHQK;Initial Catalog=Caja_Social;Integrated Security=True")
 
 
-        Dim sql As String = "Select nombre,apellido,edad,tipaje
+        Dim sql As String = "Select nombre,apellido,edad,tipo_sangre
                                 from paciente 
                                 where id_paciente=" + txtCedula.Text()
 
