@@ -80,5 +80,25 @@ Public Class Metodos
 
     End Function
 
+    Public Shared Function ListarMedicamentos() As Object
+        Using CN As New SqlConnection(My.Settings.Conexion)
+            Using DA As New SqlDataAdapter("Select * from medicamentos", CN)
+                Using Datos As New DataTable
+                    DA.Fill(Datos)
+                    Return Datos
+                End Using
+            End Using
+        End Using
+    End Function
 
+    Public Shared Function ListarVias() As Object
+        Using CN As New SqlConnection(My.Settings.Conexion)
+            Using DA As New SqlDataAdapter("Select DISTINCT via from medicamentos", CN)
+                Using Datos As New DataTable
+                    DA.Fill(Datos)
+                    Return Datos
+                End Using
+            End Using
+        End Using
+    End Function
 End Class
