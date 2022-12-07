@@ -1,4 +1,18 @@
 ﻿Public Class Hoja_Frontal
+
+    Private Sub Hoja_Frontal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cbxUnidad.Items.Add("Unidad de Hematología/Oncología e Inmunología")
+        cbxUnidad.Items.Add("Unidad Quirúrgica / Ortopédica Pediátrica")
+        cbxUnidad.Items.Add("Unidad de Psiquiatría")
+        cbxUnidad.Items.Add("Unidad de Neurología y Neurocirugía")
+        cbxUnidad.Items.Add("Unidad de Nefrología/Gastroenterología/Endocrinología")
+        cbxUnidad.Items.Add("Unidad Respiratoria")
+        cbxUnidad.Items.Add("Unidad Quirúrgica Médica Cardíaca")
+        cbxUnidad.Items.Add("Unidad de Cuidado Infantil")
+        cbxUnidad.Items.Add("Unidad de Cuidados Intensivos")
+        cbxFactorRH.Items.Add("Positivo")
+        cbxFactorRH.Items.Add("Negativo")
+    End Sub
     Private Sub btnGuardar_Click(sender As Object, e As EventArgs) Handles btnGuardar.Click
         Dim id_paciente, unidad_medica, numero_cama,
         factorrh, fecha_ingreso, fecha_egreso, hora_ingreso,
@@ -20,4 +34,6 @@
 
 
     End Sub
+
+
 End Class

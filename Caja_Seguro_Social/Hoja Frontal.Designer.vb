@@ -82,7 +82,6 @@ Partial Class Hoja_Frontal
         'cbxUnidad
         '
         Me.cbxUnidad.FormattingEnabled = True
-        Me.cbxUnidad.Items.AddRange(New Object() {"Unidad de Hematología/Oncología e Inmunología", "Unidad Quirúrgica/Ortopédica Pediátrica", "Unidad de Psiquiatría", "Unidad de Neurología y Neurocirugía", "Unidad de Nefrología/Gastroenterología/Endocrinología", "Unidad Respiratoria", "Unidad Quirúrgica Médica Cardíaca", "Unidad de Cuidado Infantil", "Unidad de Cuidados Intensivos"})
         Me.cbxUnidad.Location = New System.Drawing.Point(42, 94)
         Me.cbxUnidad.Name = "cbxUnidad"
         Me.cbxUnidad.Size = New System.Drawing.Size(399, 23)
@@ -140,7 +139,6 @@ Partial Class Hoja_Frontal
         'cbxFactorRH
         '
         Me.cbxFactorRH.FormattingEnabled = True
-        Me.cbxFactorRH.Items.AddRange(New Object() {"Positivo", "Negativo"})
         Me.cbxFactorRH.Location = New System.Drawing.Point(175, 173)
         Me.cbxFactorRH.Name = "cbxFactorRH"
         Me.cbxFactorRH.Size = New System.Drawing.Size(121, 23)
