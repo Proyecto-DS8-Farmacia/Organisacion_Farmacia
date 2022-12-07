@@ -42,9 +42,7 @@ Partial Class Hoja_Frontal
         Me.txtDireccion = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.txtDiagnosticoIn = New System.Windows.Forms.TextBox()
-        Me.txtDiagnosticoEg = New System.Windows.Forms.TextBox()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.dtpHoraEgreso = New System.Windows.Forms.DateTimePicker()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -248,16 +246,6 @@ Partial Class Hoja_Frontal
         Me.Label16.TabIndex = 53
         Me.Label16.Text = "Diagnóstico de ingreso:"
         '
-        'Label17
-        '
-        Me.Label17.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label17.ForeColor = System.Drawing.Color.Black
-        Me.Label17.Location = New System.Drawing.Point(383, 20)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(222, 19)
-        Me.Label17.TabIndex = 55
-        Me.Label17.Text = "Diagnóstico de egreso:"
-        '
         'txtDiagnosticoIn
         '
         Me.txtDiagnosticoIn.Location = New System.Drawing.Point(17, 52)
@@ -265,14 +253,6 @@ Partial Class Hoja_Frontal
         Me.txtDiagnosticoIn.Name = "txtDiagnosticoIn"
         Me.txtDiagnosticoIn.Size = New System.Drawing.Size(310, 96)
         Me.txtDiagnosticoIn.TabIndex = 57
-        '
-        'txtDiagnosticoEg
-        '
-        Me.txtDiagnosticoEg.Location = New System.Drawing.Point(392, 52)
-        Me.txtDiagnosticoEg.Multiline = True
-        Me.txtDiagnosticoEg.Name = "txtDiagnosticoEg"
-        Me.txtDiagnosticoEg.Size = New System.Drawing.Size(337, 96)
-        Me.txtDiagnosticoEg.TabIndex = 58
         '
         'btnGuardar
         '
@@ -305,10 +285,8 @@ Partial Class Hoja_Frontal
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.txtDiagnosticoIn)
-        Me.GroupBox1.Controls.Add(Me.txtDiagnosticoEg)
         Me.GroupBox1.Location = New System.Drawing.Point(46, 341)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
@@ -400,9 +378,7 @@ Partial Class Hoja_Frontal
     Friend WithEvents txtDireccion As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
     Friend WithEvents txtDiagnosticoIn As TextBox
-    Friend WithEvents txtDiagnosticoEg As TextBox
     Friend WithEvents btnGuardar As Button
     Friend WithEvents dtpHoraEgreso As DateTimePicker
     Friend WithEvents Button1 As Button
