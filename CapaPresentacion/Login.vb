@@ -26,10 +26,16 @@ Public Class Login
 
 
                     MessageBox.Show("ERES UN DOCTOR", "Aviso!!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Panel.lblCorreo.Text = txtCorreo.Text
                     Panel.Show()
                     Me.Hide()
+                ElseIf (CapaDatos.Metodos.INICIAR_SESION(txtCorreo.Text.ToString, txtContraseña.Text.ToString, "Enfermera")) Then
 
+                    Panel.Button1.Hide()
 
+                    MessageBox.Show("ERES UNA ENFERMERA", "Aviso!!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Panel.Show()
+                    Me.Hide()
                 Else
                     MessageBox.Show("No se inicio sesion. Revise sus credenciales.", "Aviso!!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 End If

@@ -48,6 +48,7 @@ Partial Class notas_enfermeras
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -234,7 +235,7 @@ Partial Class notas_enfermeras
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(18, 109)
+        Me.DataGridView1.Location = New System.Drawing.Point(18, 26)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
@@ -244,8 +245,7 @@ Partial Class notas_enfermeras
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Location = New System.Drawing.Point(383, 308)
+        Me.GroupBox1.Location = New System.Drawing.Point(383, 262)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(493, 182)
         Me.GroupBox1.TabIndex = 4
@@ -262,7 +262,8 @@ Partial Class notas_enfermeras
         '
         'GroupBox3
         '
-        Me.GroupBox3.Location = New System.Drawing.Point(383, 105)
+        Me.GroupBox3.Controls.Add(Me.DataGridView1)
+        Me.GroupBox3.Location = New System.Drawing.Point(383, 53)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(493, 182)
         Me.GroupBox3.TabIndex = 5
@@ -285,6 +286,7 @@ Partial Class notas_enfermeras
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

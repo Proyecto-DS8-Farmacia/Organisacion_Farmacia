@@ -64,7 +64,9 @@ Public Class HojadeIngreso
                 n_hijos = 0
             End If
             CapaDatos.Metodos.GuardarHojaDeIngreso(id_paciente, nombre, apellido, correo, telefono, tipo_sangre, estado, previsio, edad, n_hijos)
+            MessageBox.Show("Datos Insertados", "Aviso!!", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Catch ex As Exception
+
             MessageBox.Show("Los Campos edad e hijos deben ser valores numericos", "Aviso!!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         End Try
     End Sub

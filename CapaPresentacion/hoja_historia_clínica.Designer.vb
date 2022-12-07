@@ -22,9 +22,8 @@ Partial Class hoja_historia_clínica
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.LblCedula = New System.Windows.Forms.Label()
         Me.txtPrevision = New System.Windows.Forms.TextBox()
         Me.txtEstado = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -35,6 +34,7 @@ Partial Class hoja_historia_clínica
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtPerfilapellido = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtPerfilNombre = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.txtCorreo = New System.Windows.Forms.TextBox()
@@ -42,45 +42,34 @@ Partial Class hoja_historia_clínica
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtPerfilNombre = New System.Windows.Forms.TextBox()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnGuardar = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(18, 109)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(632, 54)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.DataGridView1)
-        Me.GroupBox1.Location = New System.Drawing.Point(389, 55)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(672, 182)
-        Me.GroupBox1.TabIndex = 1
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
-        '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.LblCedula)
         Me.GroupBox2.Controls.Add(Me.txtPrevision)
         Me.GroupBox2.Controls.Add(Me.txtEstado)
         Me.GroupBox2.Controls.Add(Me.Label7)
@@ -103,22 +92,33 @@ Partial Class hoja_historia_clínica
         Me.GroupBox2.Size = New System.Drawing.Size(365, 551)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
+        '
+        'LblCedula
+        '
+        Me.LblCedula.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LblCedula.ForeColor = System.Drawing.Color.Black
+        Me.LblCedula.Location = New System.Drawing.Point(107, 146)
+        Me.LblCedula.Name = "LblCedula"
+        Me.LblCedula.Size = New System.Drawing.Size(94, 25)
+        Me.LblCedula.TabIndex = 32
+        Me.LblCedula.Text = "0-000-0000"
         '
         'txtPrevision
         '
+        Me.txtPrevision.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPrevision.Location = New System.Drawing.Point(121, 523)
         Me.txtPrevision.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtPrevision.Name = "txtPrevision"
-        Me.txtPrevision.Size = New System.Drawing.Size(225, 27)
+        Me.txtPrevision.Size = New System.Drawing.Size(225, 20)
         Me.txtPrevision.TabIndex = 31
         '
         'txtEstado
         '
+        Me.txtEstado.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEstado.Location = New System.Drawing.Point(121, 477)
         Me.txtEstado.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtEstado.Name = "txtEstado"
-        Me.txtEstado.Size = New System.Drawing.Size(225, 27)
+        Me.txtEstado.Size = New System.Drawing.Size(225, 20)
         Me.txtEstado.TabIndex = 30
         '
         'Label7
@@ -143,18 +143,20 @@ Partial Class hoja_historia_clínica
         '
         'txtNhijos
         '
+        Me.txtNhijos.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtNhijos.Location = New System.Drawing.Point(121, 431)
         Me.txtNhijos.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtNhijos.Name = "txtNhijos"
-        Me.txtNhijos.Size = New System.Drawing.Size(225, 27)
+        Me.txtNhijos.Size = New System.Drawing.Size(225, 20)
         Me.txtNhijos.TabIndex = 27
         '
         'txtEdad
         '
+        Me.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtEdad.Location = New System.Drawing.Point(121, 385)
         Me.txtEdad.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtEdad.Name = "txtEdad"
-        Me.txtEdad.Size = New System.Drawing.Size(225, 27)
+        Me.txtEdad.Size = New System.Drawing.Size(225, 20)
         Me.txtEdad.TabIndex = 26
         '
         'Label3
@@ -179,10 +181,11 @@ Partial Class hoja_historia_clínica
         '
         'txtPerfilapellido
         '
+        Me.txtPerfilapellido.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPerfilapellido.Location = New System.Drawing.Point(121, 247)
         Me.txtPerfilapellido.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtPerfilapellido.Name = "txtPerfilapellido"
-        Me.txtPerfilapellido.Size = New System.Drawing.Size(225, 27)
+        Me.txtPerfilapellido.Size = New System.Drawing.Size(225, 20)
         Me.txtPerfilapellido.TabIndex = 23
         '
         'Label2
@@ -194,6 +197,15 @@ Partial Class hoja_historia_clínica
         Me.Label2.Size = New System.Drawing.Size(94, 25)
         Me.Label2.TabIndex = 22
         Me.Label2.Text = "Apellido: "
+        '
+        'txtPerfilNombre
+        '
+        Me.txtPerfilNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPerfilNombre.Location = New System.Drawing.Point(121, 199)
+        Me.txtPerfilNombre.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtPerfilNombre.Name = "txtPerfilNombre"
+        Me.txtPerfilNombre.Size = New System.Drawing.Size(225, 20)
+        Me.txtPerfilNombre.TabIndex = 21
         '
         'Label1
         '
@@ -207,18 +219,20 @@ Partial Class hoja_historia_clínica
         '
         'txtTelefono
         '
+        Me.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtTelefono.Location = New System.Drawing.Point(121, 339)
         Me.txtTelefono.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtTelefono.Name = "txtTelefono"
-        Me.txtTelefono.Size = New System.Drawing.Size(225, 27)
+        Me.txtTelefono.Size = New System.Drawing.Size(225, 20)
         Me.txtTelefono.TabIndex = 19
         '
         'txtCorreo
         '
+        Me.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtCorreo.Location = New System.Drawing.Point(121, 293)
         Me.txtCorreo.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(225, 27)
+        Me.txtCorreo.Size = New System.Drawing.Size(225, 20)
         Me.txtCorreo.TabIndex = 18
         '
         'Label5
@@ -244,23 +258,34 @@ Partial Class hoja_historia_clínica
         'PictureBox1
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.PictureBox1.Location = New System.Drawing.Point(121, 38)
+        Me.PictureBox1.Image = Global.CapaPresentacion.My.Resources.Resources.clientes
+        Me.PictureBox1.Location = New System.Drawing.Point(46, 11)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(112, 127)
+        Me.PictureBox1.Size = New System.Drawing.Size(222, 130)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.RichTextBox1)
         Me.GroupBox3.Controls.Add(Me.Label9)
-        Me.GroupBox3.Location = New System.Drawing.Point(383, 253)
+        Me.GroupBox3.Location = New System.Drawing.Point(383, 38)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(672, 94)
+        Me.GroupBox3.Size = New System.Drawing.Size(672, 119)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "ANAMNESISI PROXIMA"
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.RichTextBox1.Location = New System.Drawing.Point(12, 51)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(654, 51)
+        Me.RichTextBox1.TabIndex = 4
+        Me.RichTextBox1.Text = ""
         '
         'Label9
         '
@@ -274,28 +299,111 @@ Partial Class hoja_historia_clínica
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.Label18)
+        Me.GroupBox4.Controls.Add(Me.Label17)
+        Me.GroupBox4.Controls.Add(Me.Label16)
         Me.GroupBox4.Controls.Add(Me.Label15)
+        Me.GroupBox4.Controls.Add(Me.TextBox6)
+        Me.GroupBox4.Controls.Add(Me.TextBox5)
+        Me.GroupBox4.Controls.Add(Me.TextBox4)
+        Me.GroupBox4.Controls.Add(Me.TextBox3)
+        Me.GroupBox4.Controls.Add(Me.TextBox2)
         Me.GroupBox4.Controls.Add(Me.Label14)
         Me.GroupBox4.Controls.Add(Me.Label13)
         Me.GroupBox4.Controls.Add(Me.Label12)
         Me.GroupBox4.Controls.Add(Me.Label11)
         Me.GroupBox4.Controls.Add(Me.Label10)
-        Me.GroupBox4.Location = New System.Drawing.Point(383, 366)
+        Me.GroupBox4.Location = New System.Drawing.Point(383, 163)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(672, 177)
         Me.GroupBox4.TabIndex = 3
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "EXAMEN FISICO"
         '
+        'Label18
+        '
+        Me.Label18.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.ForeColor = System.Drawing.Color.Black
+        Me.Label18.Location = New System.Drawing.Point(500, 72)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(63, 25)
+        Me.Label18.TabIndex = 36
+        Me.Label18.Text = "P/M"
+        '
+        'Label17
+        '
+        Me.Label17.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label17.ForeColor = System.Drawing.Color.Black
+        Me.Label17.Location = New System.Drawing.Point(346, 72)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(63, 25)
+        Me.Label17.TabIndex = 35
+        Me.Label17.Text = "mmHg"
+        '
+        'Label16
+        '
+        Me.Label16.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label16.ForeColor = System.Drawing.Color.Black
+        Me.Label16.Location = New System.Drawing.Point(197, 74)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(35, 25)
+        Me.Label16.TabIndex = 34
+        Me.Label16.Text = "CM"
+        '
         'Label15
         '
-        Me.Label15.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label15.ForeColor = System.Drawing.Color.Black
-        Me.Label15.Location = New System.Drawing.Point(6, 149)
+        Me.Label15.Location = New System.Drawing.Point(75, 71)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(102, 25)
-        Me.Label15.TabIndex = 27
-        Me.Label15.Text = "Dolor inteso en zona lumbar"
+        Me.Label15.Size = New System.Drawing.Size(35, 25)
+        Me.Label15.TabIndex = 33
+        Me.Label15.Text = "LB"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox6.Location = New System.Drawing.Point(12, 138)
+        Me.TextBox6.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(179, 20)
+        Me.TextBox6.TabIndex = 32
+        '
+        'TextBox5
+        '
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox5.Location = New System.Drawing.Point(431, 76)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(98, 20)
+        Me.TextBox5.TabIndex = 31
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Location = New System.Drawing.Point(270, 78)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(70, 20)
+        Me.TextBox4.TabIndex = 30
+        '
+        'TextBox3
+        '
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox3.Location = New System.Drawing.Point(126, 78)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(65, 20)
+        Me.TextBox3.TabIndex = 29
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Location = New System.Drawing.Point(6, 78)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(63, 20)
+        Me.TextBox2.TabIndex = 28
         '
         'Label14
         '
@@ -347,38 +455,47 @@ Partial Class hoja_historia_clínica
         Me.Label10.TabIndex = 22
         Me.Label10.Text = "Peso "
         '
-        'txtPerfilNombre
+        'Button1
         '
-        Me.txtPerfilNombre.Location = New System.Drawing.Point(121, 199)
-        Me.txtPerfilNombre.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.txtPerfilNombre.Name = "txtPerfilNombre"
-        Me.txtPerfilNombre.Size = New System.Drawing.Size(225, 27)
-        Me.txtPerfilNombre.TabIndex = 21
+        Me.Button1.Location = New System.Drawing.Point(654, 590)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(86, 31)
+        Me.Button1.TabIndex = 64
+        Me.Button1.Text = "Siguiente"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btnGuardar
+        '
+        Me.btnGuardar.Location = New System.Drawing.Point(562, 590)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.btnGuardar.Name = "btnGuardar"
+        Me.btnGuardar.Size = New System.Drawing.Size(86, 31)
+        Me.btnGuardar.TabIndex = 63
+        Me.btnGuardar.Text = "Guardar"
+        Me.btnGuardar.UseVisualStyleBackColor = True
         '
         'hoja_historia_clínica
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1089, 648)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
         Me.Name = "hoja_historia_clínica"
         Me.Text = "Form1"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents txtPerfilapellido As TextBox
@@ -399,11 +516,23 @@ Partial Class hoja_historia_clínica
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents txtPerfilNombre As TextBox
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents LblCedula As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnGuardar As Button
 End Class

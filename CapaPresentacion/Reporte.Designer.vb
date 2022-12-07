@@ -228,11 +228,11 @@ Partial Class Reporte
         Me.Label9.TabIndex = 19
         Me.Label9.Text = "Label9"
         '
-        'Form1
+        'Reporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1280, 656)
+        Me.ClientSize = New System.Drawing.Size(1280, 702)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.DataGridView3)
@@ -253,7 +253,7 @@ Partial Class Reporte
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.txtCedula)
         Me.Controls.Add(Me.btnBuscar)
-        Me.Name = "Form1"
+        Me.Name = "Reporte"
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()

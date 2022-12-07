@@ -19,8 +19,10 @@ Public Class Metodos
                     If CN.State = ConnectionState.Closed Then
                         CN.Open()
                     End If
+
                     CMD.ExecuteNonQuery()
                 Catch ex As Exception
+                    MsgBox(ex.Message)
                     Console.WriteLine(ex.Message)
                 End Try
                 CN.Close()
@@ -46,9 +48,11 @@ Public Class Metodos
                     If CN.State = ConnectionState.Closed Then
                         CN.Open()
                     End If
+
                     CMD.ExecuteNonQuery()
                 Catch ex As Exception
                     Console.WriteLine(ex.Message)
+                    MsgBox(ex.Message)
                 End Try
                 CN.Close()
             End Using
@@ -79,6 +83,54 @@ Public Class Metodos
         End Using
 
     End Function
+    Public Shared Function ListarMedicamentos() As Object
+        Using CN As New SqlConnection(My.Settings.Conexion)
+            Using DA As New SqlDataAdapter("Select * from medicamentos", CN)
+                Using Datos As New DataTable
+                    DA.Fill(Datos)
+                    Return Datos
+                End Using
+            End Using
+        End Using
+    End Function
 
+    Public Shared Function ListarVias() As Object
+        Using CN As New SqlConnection(My.Settings.Conexion)
+            Using DA As New SqlDataAdapter("Select DISTINCT via from medicamentos", CN)
+                Using Datos As New DataTable
+                    DA.Fill(Datos)
+                    Return Datos
+                End Using
+            End Using
+        End Using
+    End Function
+
+    Public Shared Sub Historia_Clinico(id_paciente As String, unidad_medica As String, apellido As String, correo As Double, telefono As Double, tipo_sangre As String, edad As Integer, n_hijos As Integer)
+
+        Using CN As New SqlConnection(My.Settings.Conexion)
+            Using CMD As New SqlCommand("hs_historialClinico", CN)
+                CMD.CommandType = CommandType.StoredProcedure
+                CMD.Parameters.AddWithValue("@id_paciente", id_paciente)
+                CMD.Parameters.AddWithValue("@unidad_medica", unidad_medica)
+                CMD.Parameters.AddWithValue("@amanesis_consulta", apellido)
+                CMD.Parameters.AddWithValue("@peso", correo)
+                CMD.Parameters.AddWithValue("@estatura ", telefono)
+                CMD.Parameters.AddWithValue("@presion", edad)
+                CMD.Parameters.AddWithValue("@pulso", tipo_sangre)
+                CMD.Parameters.AddWithValue("@examen_fisico", n_hijos)
+
+                Try
+                    If CN.State = ConnectionState.Closed Then
+                        CN.Open()
+                    End If
+                    CMD.ExecuteNonQuery()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                    Console.WriteLine(ex.Message)
+                End Try
+                CN.Close()
+            End Using
+        End Using
+    End Sub
 
 End Class

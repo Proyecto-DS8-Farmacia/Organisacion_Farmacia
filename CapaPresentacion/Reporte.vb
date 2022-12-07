@@ -30,6 +30,10 @@ Public Class Reporte
                                 from historial_clinico 
                                 where id_paciente=" + txtCedula.Text()
 
+
+
+
+
             Dim cmd1 As New SqlCommand(sql, conex)
             Dim da1 As New SqlDataAdapter(cmd1)
 

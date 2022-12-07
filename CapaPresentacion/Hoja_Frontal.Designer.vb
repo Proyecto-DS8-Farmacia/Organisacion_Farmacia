@@ -53,16 +53,37 @@ Partial Class Hoja_Frontal
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.LblCedula = New System.Windows.Forms.Label()
+        Me.txtPrevision = New System.Windows.Forms.TextBox()
+        Me.txtEstado = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtNhijos = New System.Windows.Forms.TextBox()
+        Me.txtEdad = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.txtPerfilapellido = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.txtPerfilNombre = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.txtTelefono = New System.Windows.Forms.TextBox()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(389, 12)
+        Me.Label1.Location = New System.Drawing.Point(738, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(144, 27)
         Me.Label1.TabIndex = 0
@@ -307,7 +328,7 @@ Partial Class Hoja_Frontal
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(408, 728)
+        Me.btnGuardar.Location = New System.Drawing.Point(795, 706)
         Me.btnGuardar.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(86, 31)
@@ -329,7 +350,7 @@ Partial Class Hoja_Frontal
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(500, 728)
+        Me.Button1.Location = New System.Drawing.Point(887, 706)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(86, 31)
@@ -343,7 +364,7 @@ Partial Class Hoja_Frontal
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.txtDiagnosticoIn)
         Me.GroupBox1.Controls.Add(Me.txtDiagnosticoEg)
-        Me.GroupBox1.Location = New System.Drawing.Point(53, 455)
+        Me.GroupBox1.Location = New System.Drawing.Point(413, 455)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(852, 219)
         Me.GroupBox1.TabIndex = 63
@@ -359,7 +380,7 @@ Partial Class Hoja_Frontal
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.dtpFechaEgreso)
         Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Location = New System.Drawing.Point(53, 275)
+        Me.GroupBox2.Location = New System.Drawing.Point(408, 275)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(857, 174)
         Me.GroupBox2.TabIndex = 64
@@ -380,17 +401,218 @@ Partial Class Hoja_Frontal
         Me.GroupBox3.Controls.Add(Me.rbtnMasculino)
         Me.GroupBox3.Controls.Add(Me.Label10)
         Me.GroupBox3.Controls.Add(Me.rbtnFemenino)
-        Me.GroupBox3.Location = New System.Drawing.Point(53, 69)
+        Me.GroupBox3.Location = New System.Drawing.Point(408, 69)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(857, 200)
         Me.GroupBox3.TabIndex = 65
         Me.GroupBox3.TabStop = False
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.LblCedula)
+        Me.GroupBox4.Controls.Add(Me.txtPrevision)
+        Me.GroupBox4.Controls.Add(Me.txtEstado)
+        Me.GroupBox4.Controls.Add(Me.Label3)
+        Me.GroupBox4.Controls.Add(Me.Label8)
+        Me.GroupBox4.Controls.Add(Me.txtNhijos)
+        Me.GroupBox4.Controls.Add(Me.txtEdad)
+        Me.GroupBox4.Controls.Add(Me.Label6)
+        Me.GroupBox4.Controls.Add(Me.Label15)
+        Me.GroupBox4.Controls.Add(Me.txtPerfilapellido)
+        Me.GroupBox4.Controls.Add(Me.Label18)
+        Me.GroupBox4.Controls.Add(Me.txtPerfilNombre)
+        Me.GroupBox4.Controls.Add(Me.Label19)
+        Me.GroupBox4.Controls.Add(Me.txtTelefono)
+        Me.GroupBox4.Controls.Add(Me.txtCorreo)
+        Me.GroupBox4.Controls.Add(Me.Label20)
+        Me.GroupBox4.Controls.Add(Me.Label21)
+        Me.GroupBox4.Controls.Add(Me.PictureBox1)
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 57)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(365, 567)
+        Me.GroupBox4.TabIndex = 66
+        Me.GroupBox4.TabStop = False
+        '
+        'LblCedula
+        '
+        Me.LblCedula.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LblCedula.ForeColor = System.Drawing.Color.Black
+        Me.LblCedula.Location = New System.Drawing.Point(107, 146)
+        Me.LblCedula.Name = "LblCedula"
+        Me.LblCedula.Size = New System.Drawing.Size(94, 25)
+        Me.LblCedula.TabIndex = 32
+        Me.LblCedula.Text = "0-000-0000"
+        '
+        'txtPrevision
+        '
+        Me.txtPrevision.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPrevision.Location = New System.Drawing.Point(121, 523)
+        Me.txtPrevision.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtPrevision.Name = "txtPrevision"
+        Me.txtPrevision.Size = New System.Drawing.Size(225, 20)
+        Me.txtPrevision.TabIndex = 31
+        '
+        'txtEstado
+        '
+        Me.txtEstado.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEstado.Location = New System.Drawing.Point(121, 477)
+        Me.txtEstado.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtEstado.Name = "txtEstado"
+        Me.txtEstado.Size = New System.Drawing.Size(225, 20)
+        Me.txtEstado.TabIndex = 30
+        '
+        'Label3
+        '
+        Me.Label3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(17, 477)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(80, 25)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "Estado Civil:"
+        '
+        'Label8
+        '
+        Me.Label8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.Color.Black
+        Me.Label8.Location = New System.Drawing.Point(9, 523)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(98, 25)
+        Me.Label8.TabIndex = 29
+        Me.Label8.Text = "Prevision: "
+        '
+        'txtNhijos
+        '
+        Me.txtNhijos.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtNhijos.Location = New System.Drawing.Point(121, 431)
+        Me.txtNhijos.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtNhijos.Name = "txtNhijos"
+        Me.txtNhijos.Size = New System.Drawing.Size(225, 20)
+        Me.txtNhijos.TabIndex = 27
+        '
+        'txtEdad
+        '
+        Me.txtEdad.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtEdad.Location = New System.Drawing.Point(121, 385)
+        Me.txtEdad.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtEdad.Name = "txtEdad"
+        Me.txtEdad.Size = New System.Drawing.Size(225, 20)
+        Me.txtEdad.TabIndex = 26
+        '
+        'Label6
+        '
+        Me.Label6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(17, 385)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(80, 25)
+        Me.Label6.TabIndex = 24
+        Me.Label6.Text = "Edad:"
+        '
+        'Label15
+        '
+        Me.Label15.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label15.ForeColor = System.Drawing.Color.Black
+        Me.Label15.Location = New System.Drawing.Point(9, 431)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(98, 25)
+        Me.Label15.TabIndex = 25
+        Me.Label15.Text = "N° Hijos: "
+        '
+        'txtPerfilapellido
+        '
+        Me.txtPerfilapellido.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPerfilapellido.Location = New System.Drawing.Point(121, 247)
+        Me.txtPerfilapellido.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtPerfilapellido.Name = "txtPerfilapellido"
+        Me.txtPerfilapellido.Size = New System.Drawing.Size(225, 20)
+        Me.txtPerfilapellido.TabIndex = 23
+        '
+        'Label18
+        '
+        Me.Label18.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label18.ForeColor = System.Drawing.Color.Black
+        Me.Label18.Location = New System.Drawing.Point(13, 247)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(94, 25)
+        Me.Label18.TabIndex = 22
+        Me.Label18.Text = "Apellido: "
+        '
+        'txtPerfilNombre
+        '
+        Me.txtPerfilNombre.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPerfilNombre.Location = New System.Drawing.Point(121, 199)
+        Me.txtPerfilNombre.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtPerfilNombre.Name = "txtPerfilNombre"
+        Me.txtPerfilNombre.Size = New System.Drawing.Size(225, 20)
+        Me.txtPerfilNombre.TabIndex = 21
+        '
+        'Label19
+        '
+        Me.Label19.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label19.ForeColor = System.Drawing.Color.Black
+        Me.Label19.Location = New System.Drawing.Point(17, 204)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(94, 25)
+        Me.Label19.TabIndex = 20
+        Me.Label19.Text = "Nombre: "
+        '
+        'txtTelefono
+        '
+        Me.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtTelefono.Location = New System.Drawing.Point(121, 339)
+        Me.txtTelefono.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(225, 20)
+        Me.txtTelefono.TabIndex = 19
+        '
+        'txtCorreo
+        '
+        Me.txtCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtCorreo.Location = New System.Drawing.Point(121, 293)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(225, 20)
+        Me.txtCorreo.TabIndex = 18
+        '
+        'Label20
+        '
+        Me.Label20.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label20.ForeColor = System.Drawing.Color.Black
+        Me.Label20.Location = New System.Drawing.Point(17, 293)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(80, 25)
+        Me.Label20.TabIndex = 16
+        Me.Label20.Text = "Correo:"
+        '
+        'Label21
+        '
+        Me.Label21.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label21.ForeColor = System.Drawing.Color.Black
+        Me.Label21.Location = New System.Drawing.Point(9, 339)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(98, 25)
+        Me.Label21.TabIndex = 17
+        Me.Label21.Text = "Telefono: "
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox1.Image = Global.CapaPresentacion.My.Resources.Resources.clientes
+        Me.PictureBox1.Location = New System.Drawing.Point(46, 11)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(222, 130)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'Hoja_Frontal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 784)
+        Me.ClientSize = New System.Drawing.Size(1281, 784)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -405,6 +627,9 @@ Partial Class Hoja_Frontal
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -441,4 +666,23 @@ Partial Class Hoja_Frontal
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents LblCedula As Label
+    Friend WithEvents txtPrevision As TextBox
+    Friend WithEvents txtEstado As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtNhijos As TextBox
+    Friend WithEvents txtEdad As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents txtPerfilapellido As TextBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents txtPerfilNombre As TextBox
+    Friend WithEvents Label19 As Label
+    Friend WithEvents txtTelefono As TextBox
+    Friend WithEvents txtCorreo As TextBox
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -63,9 +63,9 @@ Partial Class OrdenMedica
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(31, 84)
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 43)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(738, 158)
+        Me.GroupBox1.Size = New System.Drawing.Size(738, 199)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Registrar Ordenes Medicas"
@@ -175,7 +175,7 @@ Partial Class OrdenMedica
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 433)
+        Me.ClientSize = New System.Drawing.Size(800, 500)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.DataGridView1)
