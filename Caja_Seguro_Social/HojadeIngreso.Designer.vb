@@ -22,7 +22,6 @@ Partial Class HojadeIngreso
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim cbxTipoSangre As System.Windows.Forms.ComboBox
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -48,12 +47,14 @@ Partial Class HojadeIngreso
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtObservaciones = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        cbxTipoSangre = New System.Windows.Forms.ComboBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.cbxTipoSangre = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.cbxTipoSangre)
         Me.GroupBox1.Controls.Add(Me.txtTelefono)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.txtEdad)
@@ -61,7 +62,6 @@ Partial Class HojadeIngreso
         Me.GroupBox1.Controls.Add(Me.txtApellido)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.txtCedula)
-        Me.GroupBox1.Controls.Add(cbxTipoSangre)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -105,7 +105,7 @@ Partial Class HojadeIngreso
         '
         Me.txtCorreo.Location = New System.Drawing.Point(477, 89)
         Me.txtCorreo.Name = "txtCorreo"
-        Me.txtCorreo.Size = New System.Drawing.Size(121, 21)
+        Me.txtCorreo.Size = New System.Drawing.Size(160, 21)
         Me.txtCorreo.TabIndex = 34
         '
         'txtApellido
@@ -128,15 +128,6 @@ Partial Class HojadeIngreso
         Me.txtCedula.Name = "txtCedula"
         Me.txtCedula.Size = New System.Drawing.Size(124, 21)
         Me.txtCedula.TabIndex = 31
-        '
-        'cbxTipoSangre
-        '
-        cbxTipoSangre.FormattingEnabled = True
-        cbxTipoSangre.Items.AddRange(New Object() {"A", "AB", "B", "O"})
-        cbxTipoSangre.Location = New System.Drawing.Point(526, 178)
-        cbxTipoSangre.Name = "cbxTipoSangre"
-        cbxTipoSangre.Size = New System.Drawing.Size(72, 23)
-        cbxTipoSangre.TabIndex = 30
         '
         'Label9
         '
@@ -211,10 +202,9 @@ Partial Class HojadeIngreso
         'cbxEstado
         '
         Me.cbxEstado.FormattingEnabled = True
-        Me.cbxEstado.Items.AddRange(New Object() {"Unido(a)", "Soltero(a)", "Casado(a)", "Divorciado(a)", "Separado(a)", "Viudo(a)"})
         Me.cbxEstado.Location = New System.Drawing.Point(493, 44)
         Me.cbxEstado.Name = "cbxEstado"
-        Me.cbxEstado.Size = New System.Drawing.Size(121, 23)
+        Me.cbxEstado.Size = New System.Drawing.Size(105, 23)
         Me.cbxEstado.TabIndex = 12
         '
         'Label5
@@ -306,11 +296,29 @@ Partial Class HojadeIngreso
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(552, 434)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 40
+        Me.Button2.Text = "siguiente"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'cbxTipoSangre
+        '
+        Me.cbxTipoSangre.FormattingEnabled = True
+        Me.cbxTipoSangre.Location = New System.Drawing.Point(526, 178)
+        Me.cbxTipoSangre.Name = "cbxTipoSangre"
+        Me.cbxTipoSangre.Size = New System.Drawing.Size(72, 23)
+        Me.cbxTipoSangre.TabIndex = 38
+        '
         'HojadeIngreso
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 491)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtObservaciones)
         Me.Controls.Add(Me.Label11)
@@ -340,7 +348,6 @@ Partial Class HojadeIngreso
     Friend WithEvents txtApellido As TextBox
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents txtCedula As TextBox
-    Friend WithEvents cbxTipoSangre As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -357,4 +364,6 @@ Partial Class HojadeIngreso
     Friend WithEvents Label11 As Label
     Friend WithEvents txtObservaciones As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents cbxTipoSangre As ComboBox
 End Class
