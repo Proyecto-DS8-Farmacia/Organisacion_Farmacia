@@ -50,4 +50,10 @@ Public Class Panel
         consular_medicamentos.Show()
 
     End Sub
+
+    Private Sub btnNotas_Click(sender As Object, e As EventArgs) Handles btnNotas.Click
+        Me.Hide()
+        notas_enfermeras.Show()
+
+    End Sub
 End Class

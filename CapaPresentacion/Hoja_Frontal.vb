@@ -16,7 +16,7 @@
         hora_ingreso = dtpHoraIngreso.Value.ToShortTimeString()
         hora_egreso = dtpHoraEgreso.Value.ToShortTimeString()
         diagnostico_ingreso = txtDiagnosticoIn.Text
-        diagnostico_egreso = txtDiagnosticoEg.Text
+        diagnostico_egreso = ""
 
         CapaDatos.Metodos.GuardarHojaFrontal(id_paciente, unidad_medica, numero_cama,
                                          factorrh, fecha_ingreso, fecha_egreso, hora_ingreso,

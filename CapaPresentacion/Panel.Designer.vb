@@ -42,6 +42,7 @@ Partial Class Panel
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btnNotas = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -50,36 +51,40 @@ Partial Class Panel
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(18, 26)
+        Me.Button1.Location = New System.Drawing.Point(16, 20)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(147, 62)
+        Me.Button1.Size = New System.Drawing.Size(129, 46)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Ingresar Paciente"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(18, 162)
+        Me.Button2.Location = New System.Drawing.Point(16, 122)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(147, 62)
+        Me.Button2.Size = New System.Drawing.Size(129, 46)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Reporte"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(18, 94)
+        Me.Button3.Location = New System.Drawing.Point(16, 70)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(147, 62)
+        Me.Button3.Size = New System.Drawing.Size(129, 46)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Consultar Medicamento"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(18, 230)
+        Me.Button4.Location = New System.Drawing.Point(16, 172)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(147, 62)
+        Me.Button4.Size = New System.Drawing.Size(129, 46)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Orden Medica"
         Me.Button4.UseVisualStyleBackColor = True
@@ -88,21 +93,25 @@ Partial Class Panel
         '
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-28, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(-24, 0)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(176, 151)
+        Me.PictureBox1.Size = New System.Drawing.Size(154, 113)
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btnNotas)
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 165)
+        Me.GroupBox1.Location = New System.Drawing.Point(11, 124)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(186, 322)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(163, 283)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
@@ -120,129 +129,143 @@ Partial Class Panel
         Me.GroupBox2.Controls.Add(Me.Label2)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.PictureBox1)
-        Me.GroupBox2.Location = New System.Drawing.Point(29, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(25, 9)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(775, 157)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(678, 118)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(584, 23)
+        Me.Label5.Location = New System.Drawing.Point(511, 17)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 20)
+        Me.Label5.Size = New System.Drawing.Size(45, 15)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Correo"
         '
         'lblCorreo
         '
         Me.lblCorreo.AutoSize = True
-        Me.lblCorreo.Location = New System.Drawing.Point(584, 55)
+        Me.lblCorreo.Location = New System.Drawing.Point(511, 41)
         Me.lblCorreo.Name = "lblCorreo"
-        Me.lblCorreo.Size = New System.Drawing.Size(54, 20)
+        Me.lblCorreo.Size = New System.Drawing.Size(45, 15)
         Me.lblCorreo.TabIndex = 15
         Me.lblCorreo.Text = "Correo"
         '
         'lblhospital
         '
         Me.lblhospital.AutoSize = True
-        Me.lblhospital.Location = New System.Drawing.Point(441, 55)
+        Me.lblhospital.Location = New System.Drawing.Point(386, 41)
         Me.lblhospital.Name = "lblhospital"
-        Me.lblhospital.Size = New System.Drawing.Size(81, 20)
+        Me.lblhospital.Size = New System.Drawing.Size(91, 15)
         Me.lblhospital.TabIndex = 12
         Me.lblhospital.Text = "____________"
         '
         'lblnombre
         '
         Me.lblnombre.AutoSize = True
-        Me.lblnombre.Location = New System.Drawing.Point(283, 55)
+        Me.lblnombre.Location = New System.Drawing.Point(248, 41)
         Me.lblnombre.Name = "lblnombre"
-        Me.lblnombre.Size = New System.Drawing.Size(81, 20)
+        Me.lblnombre.Size = New System.Drawing.Size(91, 15)
         Me.lblnombre.TabIndex = 11
         Me.lblnombre.Text = "____________"
         '
         'lblapellido
         '
         Me.lblapellido.AutoSize = True
-        Me.lblapellido.Location = New System.Drawing.Point(283, 89)
+        Me.lblapellido.Location = New System.Drawing.Point(248, 67)
         Me.lblapellido.Name = "lblapellido"
-        Me.lblapellido.Size = New System.Drawing.Size(81, 20)
+        Me.lblapellido.Size = New System.Drawing.Size(91, 15)
         Me.lblapellido.TabIndex = 10
         Me.lblapellido.Text = "____________"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(426, 23)
+        Me.Label6.Location = New System.Drawing.Point(373, 17)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 20)
+        Me.Label6.Size = New System.Drawing.Size(53, 15)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "Hospital"
         '
         'lbltelefono
         '
         Me.lbltelefono.AutoSize = True
-        Me.lbltelefono.Location = New System.Drawing.Point(283, 121)
+        Me.lbltelefono.Location = New System.Drawing.Point(248, 91)
         Me.lbltelefono.Name = "lbltelefono"
-        Me.lbltelefono.Size = New System.Drawing.Size(81, 20)
+        Me.lbltelefono.Size = New System.Drawing.Size(91, 15)
         Me.lbltelefono.TabIndex = 9
         Me.lbltelefono.Text = "____________"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(210, 89)
+        Me.Label4.Location = New System.Drawing.Point(184, 67)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 20)
+        Me.Label4.Size = New System.Drawing.Size(51, 15)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Apellido"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(209, 55)
+        Me.Label3.Location = New System.Drawing.Point(183, 41)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(64, 20)
+        Me.Label3.Size = New System.Drawing.Size(52, 15)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Nombre"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(210, 121)
+        Me.Label2.Location = New System.Drawing.Point(184, 91)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 20)
+        Me.Label2.Size = New System.Drawing.Size(54, 15)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Telefono"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(185, 23)
+        Me.Label1.Location = New System.Drawing.Point(162, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 20)
+        Me.Label1.Size = New System.Drawing.Size(43, 15)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Doctor"
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(13, 493)
+        Me.DataGridView1.Location = New System.Drawing.Point(700, 395)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 29
-        Me.DataGridView1.Size = New System.Drawing.Size(14, 16)
+        Me.DataGridView1.Size = New System.Drawing.Size(12, 12)
         Me.DataGridView1.TabIndex = 7
+        '
+        'btnNotas
+        '
+        Me.btnNotas.Location = New System.Drawing.Point(16, 227)
+        Me.btnNotas.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btnNotas.Name = "btnNotas"
+        Me.btnNotas.Size = New System.Drawing.Size(129, 46)
+        Me.btnNotas.TabIndex = 4
+        Me.btnNotas.Text = "Agregar Notas de Enfermeria"
+        Me.btnNotas.UseVisualStyleBackColor = True
         '
         'Panel
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(816, 544)
+        Me.ClientSize = New System.Drawing.Size(714, 408)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Panel"
         Me.Text = "Panel"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -273,4 +296,5 @@ Partial Class Panel
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label5 As Label
     Friend WithEvents lblCorreo As Label
+    Friend WithEvents btnNotas As Button
 End Class

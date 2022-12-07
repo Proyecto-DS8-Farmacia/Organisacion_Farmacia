@@ -133,4 +133,25 @@ Public Class Metodos
         End Using
     End Sub
 
+    Public Shared Sub AgregarNotasEnfermeria(cedula As String, evolucion As String)
+        Using CN As New SqlConnection(My.Settings.Conexion)
+
+            Using CMD As New SqlCommand("sp_AddNotasEnfermeria", CN)
+
+                CMD.CommandType = CommandType.StoredProcedure
+                CMD.Parameters.AddWithValue("@id_paciente", cedula)
+                CMD.Parameters.AddWithValue("@evolucion", evolucion)
+                Try
+                    If CN.State = ConnectionState.Closed Then
+                        CN.Open()
+                    End If
+                    CMD.ExecuteNonQuery()
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                    Console.WriteLine(ex.Message)
+                End Try
+                CN.Close()
+            End Using
+        End Using
+    End Sub
 End Class
